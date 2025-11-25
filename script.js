@@ -90,7 +90,7 @@ function renderFolders() {
             <button class="delete-folder" onclick="event.stopPropagation(); deleteFolder('${id}')">×</button>
             <div class="folder-icon">📁</div>
             <div class="folder-name">${folder.name}</div>
-            <div class="folder-count">6 cards</div>
+            <div class="folder-count">${folder.cards.length} card${folder.cards.length === 1 ? '' : 's'}</div>
         `;
         card.onclick = () => openFolder(id);
 
