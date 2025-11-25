@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Study</h1>
+            <p class="subtitle">Organize your learning journey</p>
+        </header>
+
+        <div id="foldersView" class="folders-view">
+            <div class="folder-card" onclick="openModal()">
+                <div class="folder-icon">➕</div>
+                <div class="folder-name">New Folder</div>
+                <div class="folder-count">Create a new class</div>
+            </div>
+        </div>
+
+        <div id="cardsView" class="cards-view hidden">
+            <div class="cards-header">
+                <button class="btn back-btn" onclick="backToFolders()">
+                    ← Back to Folders
+                </button>
+                <h2 id="currentFolderName"></h2>
+                <div></div>
+            </div>
+            <div class="cards-grid" id="cardsGrid"></div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Create New Folder</h2>
+            <div class="input-group">
+                <label>Folder Name</label>
+                <input type="text" id="folderNameInput" placeholder="e.g., Biology 101">
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="btn" onclick="createFolder()">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
