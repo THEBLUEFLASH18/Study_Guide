@@ -186,7 +186,7 @@ h1 {
     border-radius: 8px;
     resize: none;
     font-family: inherit;
-    min-height: 60px;
+    min-height: 120px;
 }
 
 .question-input:focus {
