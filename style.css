@@ -287,7 +287,9 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .cards-grid {}
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .add-card-btn {

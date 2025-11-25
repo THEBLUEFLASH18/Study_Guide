@@ -3,7 +3,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, getDocs, doc, setDoc, deleteDoc, updateDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBt0nW_xlQMvKTduV0qmMufGFFZ9hpIFlE",
+    apiKey: GOOGLE_API_KEY,
     authDomain: "study-guide-e44d8.firebaseapp.com",
     projectId: "study-guide-e44d8",
     storageBucket: "study-guide-e44d8.firebasestorage.app",
